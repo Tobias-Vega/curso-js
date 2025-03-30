@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="miImagen" src="imagen.jpg" alt="Ejemplo">
+
+    <script>
+window.onload = function() {
+    // Código que se ejecuta cuando la página termina de cargarse
+};
+
+function mostrarMensaje() {
+    console.log("La página se ha cargado completamente");
+}
+
+window.onload = mostrarMensaje;
+
+window.onload = () => {
+    alert("¡La página ha terminado de cargar!");
+};
+
+document.getElementById("miImagen").onload = function() {
+    console.log("La imagen ha sido cargada");
+};
+
+</script>
+
+</body>
+</html>
+

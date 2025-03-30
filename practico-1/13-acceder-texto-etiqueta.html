@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo innerText, innerHTML, textContent</title>
+</head>
+<body>
+    <div id="ejemplo">
+        <p>Hola, <span style="display: none;">Mundo</span></p>
+    </div>
+
+    <script>
+        let div = document.getElementById("ejemplo");
+
+        console.log("innerText:", div.innerText);      // "Hola,"
+        console.log("innerHTML:", div.innerHTML);      // "<p>Hola, <span style="display: none;">Mundo</span></p>"
+        console.log("textContent:", div.textContent);  // "Hola, Mundo"
+    </script>
+</body>
+</html>
